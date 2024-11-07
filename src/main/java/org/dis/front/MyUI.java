@@ -33,8 +33,12 @@ public class MyUI extends UI {
         button.addClickListener(e -> {
 
         });
+
+        TabSheet tabs = new TabSheet();
+        tabs.addTab(salarioBruto).setCaption("Calcula salario bruto");
+        tabs.addTab(salarioNeto).setCaption("Calcula salario neto");
         
-        layout.addComponents(salarioBruto, button);
+        layout.addComponents(tabs, button);
         
         setContent(layout);
     }
